@@ -29,4 +29,13 @@ public class RewardValue {
         return milesValue;
     }
 
+    //Convert from cash to miles
+    public void convertFromCashToMiles(){
+        this.milesValue = this.cashValue*0.0035;
+    }
+
+    // Convert from miles to cash
+    public void convertFromMilesToCash(){
+        this.cashValue = this.milesValue*0.0035;
+    }
 }
